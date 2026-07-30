@@ -12,18 +12,18 @@ It also fully integrates as a **Faker Provider** so you can seamlessly use it in
 
 ---
 
-## 👥 Authors
+## Authors
 
 - **Muhammad Khubaib Ahmad** (`khubaib.ahmad@inference-lab.org`) - Original creator of `faker-pk`
 - **INFERENCE Lab** (`contact@inference-lab.org`) - Organization
 
-## 🔧 Maintainers
+## Maintainers
 - **Ayesha Anwar** (`hayesha1744@gmail.com`) - Lead developer of `faker-pk` v2.0
 - **INFERENCE Lab** (`contact@inference-lab.org`) - Project organization
 
 ---
 
-## 💡 Why Use `faker-pk`?
+## Why Use `faker-pk`?
 
 Developers building Pakistani software applications often encounter issues with:
 - Generating realistic, localized user profiles (CNIC, phone numbers, addresses)
@@ -36,7 +36,7 @@ Developers building Pakistani software applications often encounter issues with:
 
 ---
 
-## 📦 Installation
+## Installation
 
 ```bash
 pip install faker-pk
@@ -50,7 +50,7 @@ pip install --upgrade faker-pk
 
 ---
 
-## 🚀 Quick Start (Standalone `FakerPK` Class)
+## Quick Start (Standalone `FakerPK` Class)
 
 ```python
 from faker_pk import FakerPK
@@ -68,9 +68,9 @@ print("University:", fake.institution(level="university", city="Lahore"))
 
 ---
 
-## 🧩 Complete API Reference
+## Complete API Reference
 
-### 👤 Personal Information
+### Personal Information
 
 | Function | Description | Options / Filters | Example Output |
 | :--- | :--- | :--- | :--- |
@@ -85,7 +85,7 @@ print("University:", fake.institution(level="university", city="Lahore"))
 
 ---
 
-### 🏠 Address Information
+### Address Information
 
 | Function | Description | Options / Filters | Example Output |
 | :--- | :--- | :--- | :--- |
@@ -95,7 +95,7 @@ print("University:", fake.institution(level="university", city="Lahore"))
 
 ---
 
-### 🏢 Company & Financial Information
+### Company & Financial Information
 
 | Function | Description | Options / Filters | Example Output |
 | :--- | :--- | :--- | :--- |
@@ -105,7 +105,7 @@ print("University:", fake.institution(level="university", city="Lahore"))
 | `iban(count=1, bank=None)` | Valid Pakistani IBAN format | `bank='HBL'/...` | `"PK27UNIL8060952103358359"` |
 | `salary(count=1, industry=None)` | Realistic salary in PKR| `industry='IT'/...` | `115500` |
 
-#### 📊 Supported Industry Codes & Names:
+#### Supported Industry Codes & Names:
 When filtering `company_name()`, `job_title()`, or `salary()`, you can pass any of the following codes or full names:
 
 - `IT` (Information Technology)
@@ -126,7 +126,7 @@ When filtering `company_name()`, `job_title()`, or `salary()`, you can pass any 
 
 ---
 
-### 💼 Job Information
+### Job Information
 
 | Function | Description | Options / Filters | Example Output |
 | :--- | :--- | :--- | :--- |
@@ -135,7 +135,7 @@ When filtering `company_name()`, `job_title()`, or `salary()`, you can pass any 
 
 ---
 
-### 🎓 Education & Student Profiles
+### Education & Student Profiles
 
 | Function | Description | Options / Filters | Example Output |
 | :--- | :--- | :--- | :--- |
@@ -145,7 +145,7 @@ When filtering `company_name()`, `job_title()`, or `salary()`, you can pass any 
 
 ---
 
-## 🔁 Generating Multiple Records
+## Generating Multiple Records
 
 Passing `count > 1` returns a list of items:
 
@@ -164,7 +164,7 @@ profiles = fake.student_profile(count=5, level="university")
 
 ---
 
-## 🔌 Standard `faker` Integration (`FakerPKProvider`)
+## Standard `faker` Integration (`FakerPKProvider`)
 
 You can register `FakerPKProvider` with Python's standard `faker` library. All methods are available prefixed with `pk_` (or as alias methods):
 
@@ -184,7 +184,7 @@ print(fake.pk_student_profile())
 
 ---
 
-## 🛠️ Local Development & Testing
+## Local Development & Testing
 
 1. **Clone the repository**:
    ```bash
@@ -204,7 +204,7 @@ print(fake.pk_student_profile())
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 We welcome contributions from the community! Whether you are expanding datasets, adding validation rules, or improving performance, here is how you can help:
 
@@ -217,29 +217,29 @@ We welcome contributions from the community! Whether you are expanding datasets,
 
 ---
 
-## 👤 Authors & Contact Info
+## Authors & Contact Info
 
 ### **Muhammad Khubaib Ahmad**
-- 📧 **Email**: [khubaib.ahmad@inference-lab.org](mailto:khubaib.ahmad@inference-lab.org)
-- 🌐 **GitHub**: [Khubaib8281](https://github.com/Khubaib8281)
-- 🐍 **PyPI**: [Khubaib_01](https://pypi.org/project/faker-pk)
-- 💼 **LinkedIn**: [Muhammad Khubaib Ahmad](https://www.linkedin.com/in/muhammad-khubaib-ahmad-/)
+- **Email**: [khubaib.ahmad@inference-lab.org](mailto:khubaib.ahmad@inference-lab.org)
+- **GitHub**: [Khubaib8281](https://github.com/Khubaib8281)
+- **PyPI**: [Khubaib_01](https://pypi.org/project/faker-pk)
+- **LinkedIn**: [Muhammad Khubaib Ahmad](https://www.linkedin.com/in/muhammad-khubaib-ahmad-/)
 
 ### **Ayesha Anwar**
-- 📧 **Email**: [hayesha1744@gmail.com](mailto:hayesha1744@gmail.com)
-- 🌐 **GitHub**: [Ayesha-Anwar607](https://github.com/Ayesha-Anwar607)
-- 💼 **LinkedIn**: [Ayesha Anwar](https://www.linkedin.com/in/ayesha-anwar-3b73b8349/)
+- **Email**: [hayesha1744@gmail.com](mailto:hayesha1744@gmail.com)
+- **GitHub**: [Ayesha-Anwar607](https://github.com/Ayesha-Anwar607)
+- **LinkedIn**: [Ayesha Anwar](https://www.linkedin.com/in/ayesha-anwar-3b73b8349/)
 
 ---
 
-## 📄 License
+## License
 
 Distributed under the **MIT License**. See `LICENSE` for more information.
 
 ---
 
-## ⭐ Support
+## Support
 
 If `faker-pk` was helpful for your project or application, please consider giving the repository a star on GitHub!  
-👉 [https://github.com/Inference-LAB/faker-pk](https://github.com/Inference-LAB/faker-pk)
+ [https://github.com/Inference-LAB/faker-pk](https://github.com/Inference-LAB/faker-pk)
 
